@@ -6,6 +6,7 @@
  */
 :root {
   --blue: #007bff;
+  --blue-dark: #003366;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -378,7 +379,7 @@ h1, .h1 {
 
 span, .hilite {
 	
-	color: var(--green);
+	color: var(--blue-dark);
 
 }
 
