@@ -138,7 +138,7 @@ blockquote {
   margin: 0 0 1rem;
 }
 
-b,
+b, 
 strong {
   font-weight: bolder;
 }
@@ -10400,8 +10400,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .arrowtail{
-  border-top: 10px solid var(--paleyellow);
-  border-bottom: 10px solid var(--paleyellow);
+  border-top: 10px solid var(--blue-dark);
+  border-bottom: 10px solid var(--blue-dark);
   border-left: 15px solid #EEEEEE;
   height:0px;
   display: inline;
@@ -10409,16 +10409,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .smbar{
 	height: 20px;
-	background-color: var(--paleyellow);
-	width: 15%;
+	background-color: var(--blue-dark);
+	width: 10%;
 	max-width: auto;
 	display: inline;
 }
 
 .bgbar{
 	height: 20px;
-	background-color: var(--paleyellow);
-	width: 25%;
+	background-color: var(--blue-dark);
+	width: 20%;
 	max-width: auto;
 	display: inline;
 }
@@ -10428,5 +10428,5 @@ a.text-dark:hover, a.text-dark:focus {
 	height: 0px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 15px solid var(--paleyellow);
+    border-left: 15px solid var(--blue-dark);
 }
