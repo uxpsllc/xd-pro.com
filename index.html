@@ -69,8 +69,16 @@
 			<div class="col-12 text-center">
 			 <strong>Contact Info</strong>
 			 <br>
-             <abbr title="Phone">+1&nbsp;978.844.8131</abbr>
-			 <br>
+			<div id="phone-number"></div>
+			<script type="text/javascript" language="javascript">
+			<!--
+			document.addEventListener('DOMContentLoaded', function() {
+    		const phoneNumber = '+1 978-844-8131';
+    		const phoneNumberElement = document.getElementById('phone-number');
+			phoneNumberElement.textContent = phoneNumber;
+			});
+				-->
+			</script> 
 			 <script type="text/javascript" language="javascript">
 					<!--
 						var name = "j.riggin";
