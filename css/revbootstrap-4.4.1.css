@@ -79,7 +79,7 @@ hr {
 
 /* Thick border */
 hr, .heavy {
-  border: 1.5px solid black;
+  border: 1px solid black;
 }
 
 hr, .drk {
