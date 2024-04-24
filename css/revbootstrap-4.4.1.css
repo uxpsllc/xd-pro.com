@@ -77,6 +77,11 @@ hr {
   overflow: visible;
 }
 
+/* Thick border */
+hr, .heavy {
+  border: 1.5px solid black;
+}
+
 hr, .drk {
   box-sizing: content-box;
   height: 0;
@@ -6972,6 +6977,7 @@ button.bg-dark:focus {
 .bg-grad {	
   background-image: linear-gradient(black, var(--dark)) !important;
 }
+
 
 .bg-transparent {
   background-color: transparent !important;
