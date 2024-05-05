@@ -387,8 +387,12 @@ span, .hilite {
 	color: var(--blue-dark);
 }
 
-.special{
+.shadow1{
 	text-shadow: 2px 2px 3px var(--dark);
+}
+
+.shadow2{
+	text-shadow: 2px 2px 3px black;
 }
 
 h2, .h2 {
