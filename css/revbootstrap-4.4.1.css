@@ -76,18 +76,19 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+  color: var(--yellow);
 }
 
 /* Thick border */
 hr, .heavy {
-  border: 1px solid white;
+  border: 1px solid var(--yellow);
 }
 
 hr, .drk {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-  color: white;
+  color: var(--yellow);
 }
 
 h1, h2, h3, h4, h5, h6 {
