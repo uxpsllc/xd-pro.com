@@ -118,6 +118,14 @@ address {
   line-height: inherit;
 }
 
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  color: var(--yellow);
+}
+
+
 ol,
 ul,
 dl {
