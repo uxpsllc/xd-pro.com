@@ -76,12 +76,12 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-  color: var(--yellow);
+  color: var(--white);
 }
 
 /* Thick border */
 hr, .heavy {
-  border: 1px solid var(--yellow);
+  border: 1px solid var(--white);
 }
 
 hr, .drk {
