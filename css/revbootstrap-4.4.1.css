@@ -5422,7 +5422,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 @media (min-width: 576px) {
   .jumbotron {
     padding: 4rem 1rem;
-  }
+  
 }*/
 
 /* Media add for jumbotron scaling */
@@ -6994,7 +6994,7 @@ button.bg-dark:focus {
 
 
 .bg-grad {	
-  background-image: linear-gradient(#101014, var(--gray-dark)) !important;
+  background-image: linear-gradient(#101014, #2e2e38) !important;
 }
 
 
