@@ -4516,7 +4516,7 @@ input[type="button"].btn-block {
   line-height: 1;
   /*background-color: transparent;*/
 	/*background-color: #1e2f4a;*/
-	background-color: rbga(30, 47, 74, .5);
+	background-color: rgba(30, 47, 74, .5);
   border: .5px solid transparent;
   border-radius: 0.25rem;
 	box-shadow: 2px 2px 3px black;
