@@ -4514,7 +4514,8 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  /*background-color: transparent;*/
+	background-color: #007bff;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 	box-shadow: 2px 2px 3px black;
@@ -4530,8 +4531,6 @@ input[type="button"].btn-block {
   height: 1.5em;
   vertical-align: middle;
   content: "";
-	background-color: #007bff;
-	 color: #fff;
   background: no-repeat center center;
   background-size: 100% 100%;
  
