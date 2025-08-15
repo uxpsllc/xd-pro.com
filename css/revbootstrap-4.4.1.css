@@ -4530,9 +4530,11 @@ input[type="button"].btn-block {
   height: 1.5em;
   vertical-align: middle;
   content: "";
+	background-color: #007bff;
+	 color: #fff;
   background: no-repeat center center;
   background-size: 100% 100%;
-  color: #fff;
+ 
 }
 
 @media (max-width: 575.98px) {
