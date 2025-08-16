@@ -10926,3 +10926,47 @@ blockquote {
 .navbar .navbar-collapse.show {
   transform: none !important;
 }
+/* xdpro-dropdown-overlay-beneath.css
+   Goal: Dropdown overlays page content and opens directly beneath its trigger.
+   Target: Bootstrap 4/5 navbars & dropdowns
+*/
+
+/* 1) Navbar and menu should float above page content */
+.navbar {
+  position: relative;
+  z-index: 1030; /* above most page sections */
+}
+
+/* 2) Ensure dropdown creates a local positioning context */
+.navbar .dropdown,
+.navbar .nav-item.dropdown,
+.navbar .btn-group {
+  position: relative; /* anchor for the menu below */
+}
+
+/* 3) The menu overlays and sits directly under the trigger */
+.navbar .dropdown-menu {
+  position: absolute;
+  top: calc(100% + .25rem); /* small offset below the toggle */
+  left: 0;
+  right: auto;
+  z-index: 1080;            /* above the navbar content itself */
+  margin-top: 0;            /* rely on top offset, not margins */
+  transform: none !important; /* let CSS control placement instead of Popper */
+  overflow: visible;
+}
+
+/* 4) Respect right-aligned menus (v4 & v5) */
+.navbar .dropdown-menu.dropdown-menu-right,
+.navbar .dropdown-menu.dropdown-menu-end {
+  left: auto;
+  right: 0;
+}
+
+/* 5) Prevent parent containers from clipping the menu */
+.navbar .navbar-collapse,
+.navbar .navbar-nav,
+.navbar .container,
+.navbar .container-fluid {
+  overflow: visible;
+}
