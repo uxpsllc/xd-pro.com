@@ -1,311 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-50KSH12GRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-50KSH12GRL');
-  </script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l] = w[l] || []; w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'}); var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5THNDTFB');</script>
-  <!-- End Google Tag Manager -->
+  <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-50KSH12GRL"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>New Employee Onboarding – Case Study | XD-Pro</title>
-  <meta name="description" content="Principal-led UX case study: New Employee Onboarding experience—research, strategy, and design system foundations enabling faster day-1 readiness.">
-  <link href="css/revbootstrap-4.4.1.css" rel="stylesheet">
-
-  <style>
-    /* --- Case Study Template Helpers (shared with IMX) --- */
-    .cs-hero {
-      background: linear-gradient(135deg, rgba(17,22,31,.95), rgba(29,40,62,.92));
-      color: #fff;
-      padding: 3rem 0 2rem;
-    }
-    .cs-outcomes .badge {
-      font-weight: 600;
-      padding: .6rem .8rem;
-      margin: .25rem .35rem .25rem 0;
-      border-radius: 999px;
-    }
-    .cs-meta {
-      background: #0f1522;
-      color: #dfe6f0;
-      border-radius: .75rem;
-      padding: 1rem 1.25rem;
-    }
-    .cs-section { padding: 2.25rem 0 1.25rem; }
-    .cs-section h3, .cs-section h2 { margin-bottom: 1rem; }
-    .cs-toc a { display:block; padding:.25rem 0; color:#6c757d; }
-    .cs-toc a:hover, .cs-toc a:focus { color:#111; text-decoration: none; }
-    @media (min-width: 992px) { .cs-toc { position: sticky; top: 2rem; } }
-    figure { margin: 1rem 0; }
-    figure img { border-radius: .5rem; }
-    figure figcaption { font-size: .9rem; color: #6c757d; margin-top: .35rem; }
-    .note { font-size: .9rem; color:#6c757d; }
-
-    /* Remove the yellow hero highlight by default (cleaner editorial look) */
-    .hilite { background: none !important; font-weight: 600; }
-
-    /* Navbar dropdown overlay + beneath-trigger placement (shared fix) */
-    .navbar { position: relative; z-index: 1030; }
-    .navbar .dropdown, .navbar .nav-item.dropdown, .navbar .btn-group { position: relative; }
-    .navbar .dropdown-menu {
-      position: absolute; top: calc(100% + .25rem); left: 0; right: auto;
-      z-index: 1080; margin-top:0; transform: none !important; overflow: visible;
-    }
-    .navbar .dropdown-menu.dropdown-menu-right,
-    .navbar .dropdown-menu.dropdown-menu-end { left:auto; right:0; }
-    .navbar .navbar-collapse, .navbar .navbar-nav, .navbar .container, .navbar .container-fluid { overflow: visible; }
-  </style>
-</head>
-
-<body data-spy="scroll" data-target="#toc" data-offset="120">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5THNDTFB"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-  <!-- Site Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-grad">
-    <a class="navbar-brand shadow2" href="index.html">J. Riggin</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
-      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="approach.html">My Approach</a></li>
-        <li class="nav-item active dropdown">
-          <a class="nav-link shadow2 dropdown-toggle" href="#" id="navbarDropdown" role="button"
-             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="experience_design.html">Experience Design</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="animation.html">Animation &amp; Visualization</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="illustration.html">Illustration</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <header class="cs-hero">
-    <div class="container">
-      <div class="row align-items-end">
-        <div class="col-lg-8">
-          <h1 class="mb-2">New Employee Onboarding <span class="hilite">Experience</span></h1>
-          <p class="lead mb-3">
-            Principal-led inquiry into Day-1/Day-90 onboarding—aligning HR, IT, and business to reduce access friction,
-            clarify roles, and make “productive on arrival” the norm.
-          </p>
-          <div class="cs-outcomes">
-            <span class="badge badge-light">Unified journeys &amp; use-case taxonomy</span>
-            <span class="badge badge-light">Design system patterns for provisioning</span>
-            <span class="badge badge-light">Evidence-based roadmap &amp; KPIs</span>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-3 mt-lg-0">
-          <div class="cs-meta">
-            <strong>My Role</strong>: Principal Experience Design Lead · Lead Researcher<br>
-            <strong>Partners</strong>: HR · IT · Security · Business Ops<br>
-            <strong>Focus</strong>: Access provisioning, Day-1 readiness, 90-day integration<br>
-            <strong>Stack</strong>: Workshops (Miro) · Prototyping (Figma) · Teams
+  		gtag('config', 'G-50KSH12GRL');
+	</script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5THNDTFB');</script>
+<!-- End Google Tag Manager -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>J. Riggin New Hire Onboarding Research &amp; EX Strategy</title>
+    <!-- Bootstrap -->
+	<!-- Original css <link href="css/revbootstrap-4.4.1.css" rel="stylesheet"> 
+		-->
+    <link href="css/revbootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+  <body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5THNDTFB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-grad">
+      <a class="navbar-brand shadow2" href="index.html">J. Riggin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="approach.html">My Approach</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link shadow2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="experience_design.html">Experience Design</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="animation.html">Animation &amp; Visualization</a>
+				<div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="illustration.html">Illustration</a>
+            </div>
+			</li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-4 mb-4">
+			  <h1><span class="hilite">Employee Onboarding Experience Inquiry &amp; Evolution Strategy Design</span></h1>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <!-- Body -->
-  <main class="container">
-    <div class="row">
-      <!-- Main content -->
-      <article class="col-lg-8 pt-4">
-        <!-- Summary -->
-        <section id="summary" class="cs-section">
-          <h2>Summary</h2>
-          <p>
-            I led a cross-functional onboarding inquiry to map realities across regions, define success metrics,
-            and design patterns that shorten time-to-access and improve early-tenure confidence. The work produced
-            a unified journey framework, provisioning flows, and a prioritized roadmap grounded in evidence.
-          </p>
-          <p class="note"><em>Note:</em> Excerpts shown here are intentionally reduced to protect IP.</p>
-        </section>
-
-        <!-- Context -->
-        <section id="context" class="cs-section">
-          <h3>Context &amp; Challenge</h3>
-          <p>
-            New hires often lose days waiting for system access, role clarity, equipment, and introductions. Ownership
-            is split across HR, IT, and business operations, creating gaps that erode early momentum. We needed one
-            coherent experience—from pre-boarding to Day-90—with clear handoffs and measurable outcomes.
-          </p>
-        </section>
-
-        <!-- Approach -->
-        <section id="approach" class="cs-section">
-          <h3>Approach</h3>
-
-          <h5 class="mt-2">Discover &amp; Align</h5>
-          <p>
-            I ran design-thinking workshops in Miro to capture business and technical requirements, user needs,
-            and priority use cases; then closed gaps through contextual inquiry with regional SMEs to understand
-            local workflows and policy constraints.
-          </p>
-
-          <h5 class="mt-4">Design &amp; Prototype</h5>
-          <p>
-            Using the verified requirements, I produced service blueprints and UX flows—plus a Figma-based component
-            system for provisioning, access requests, and Day-1 setup—so we could quickly test and iterate.
-          </p>
-
-          <h5 class="mt-4">Build &amp; Govern</h5>
-          <p>
-            I formalized version-controlled requirements (functional/non-functional, accessibility) as the single
-            source of truth for hand-off; seeded UAT scenarios; and defined KPIs (time-to-access, completion rates,
-            first-week satisfaction) to track impact post-launch.
-          </p>
-
-          <h5 class="mt-4">Test &amp; Iterate</h5>
-          <p>
-            We validated with representative roles and regions, using findings to refine content, sequencing, and
-            escalation paths; insights informed the implementation roadmap and localization guidance.
-          </p>
-        </section>
-
-        <!-- Results -->
-        <section id="results" class="cs-section">
-          <h3>Outcomes</h3>
-          <ul>
-            <li><strong>Unified journey &amp; taxonomy</strong> aligning HR, IT, and business handoffs.</li>
-            <li><strong>Provisioning patterns &amp; flows</strong> ready for pilot and scale.</li>
-            <li><strong>Measurement plan</strong> to track time-to-access, role clarity, and early-tenure satisfaction.</li>
-            <li><strong>Prioritized roadmap</strong> sequencing quick wins and foundational investments.</li>
-          </ul>
-        </section>
-
-        <!-- Deliverables -->
-        <section id="deliverables" class="cs-section">
-          <h3>Deliverables</h3>
-          <div class="row">
-            <div class="col-md-6">
-              <h6>Research &amp; Strategy</h6>
-              <ul>
-                <li>Discovery synthesis &amp; baseline metrics</li>
-                <li>Journey maps (pre-boarding → Day-90), roles &amp; RACI</li>
-                <li>Use-case taxonomy &amp; prioritization model</li>
-              </ul>
-
-              <h6>Service &amp; Interaction Design</h6>
-              <ul>
-                <li>Service blueprints &amp; content model</li>
-                <li>Provisioning &amp; access flows (self-serve + approvals)</li>
-                <li>Notification templates &amp; escalation paths</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h6>Systems &amp; Enablement</h6>
-              <ul>
-                <li>Figma prototype + component library (tokens, variants)</li>
-                <li>Version-controlled requirements (F/NFR, accessibility)</li>
-                <li>Measurement plan &amp; implementation roadmap</li>
-              </ul>
-            </div>
+    </section><!--  bg-black -->
+	<!--Portfolio section -->
+<div class="jumbotron">
+<section>		
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col-12 justify-content-center">
+			  <div class="col-12 text-center">
+				<h3>Project Summary</h3>
+			  </div>
+				<h6>Role</h6>
+				<ul>
+					<li>Design Research Director</li>
+					<li>BX/EX/UX Sr. Design Research Lead</li>
+					<li>Sr. Lead Strategic Experience Designer</li>
+				</ul>
+				<br>
+				<h6>Ambition &amp; Scope</h6>
+				<p>The User Experience team within EY's global End User Technology Experience organization, brought new staff onboard from different countries and regions. A unique opportunity was available to assess the new hire onboarding experience from the perspective of five independent experts that had just joined the firm - looking at all new staff touchpoints. The findings would be shared with EY's global HR/Talent organization to inform future experience enhancement strategy.</p> 
+				<br>
+				<br>
+				<h6>Result</h6>
+				<p>Findings were used by the Talent organization to kick-off several large enhancement projects.</p>
+				<p>Grounded with initial research, I began a strategic investigation on evolving the holistic employee experience in a transformational way that would transend general HR/Talent touchpoints and expand into daily ways of working. My strategy was socialized with EY's Global Enterprise Solution Architects for feasibility analysis. Immediate value of the experience vision was recognized after technical review.</p>
+			</div>
+        </div><!-- end row -->
+	</div><!-- end container -->
+</section>
+</div>
+<section>
+      <div class="container">
+        <div class="row mt-4">
+			<div class="col-12 justify-content-center">
+				<div class="col-12 text-center">
+				<h3>Approach</h3>
+				</div>
+				<p>To achieve success, a mixed-method design research approach was followed, capturing qualitative data that was quantified. Workflow included investigate, document, analyze, verify, and evolve. 
+			  </p>
+        	</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+				<h6>Design Research Process</h6>
+				<img class="img-fluid" src="onboarding/research_approach.png" alt="Design research approach graphic">  
+					<p><br></p>
+          		</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+				<h6>General Project Overview</h6>
+				<a href="onboarding/onboarding_project_flow.jpg" alt="Project flow link">
+				<img class="img-fluid" src="onboarding/onboarding_project_flow.jpg" alt="Project flow"></a>
+          		</div>
+				<br><br>
+				<p>Staff Identified. Journeys documented. Data analyzed, Findings shared. </p>
+			</div>
+		</div>
+      </div>
+</section>  
+<div class="jumbotron">
+<section>	
+<div class="container">
+	<div class="row mt-4" >
+		<div class="col-12 justify-content-center">
+          <div class="col-12 text-center">
+            <h3>Experience Mapping</h3>
           </div>
-        </section>
-
-        <!-- Evidence / Visuals -->
-        <section id="evidence" class="cs-section">
-          <h3>Evidence &amp; Visuals</h3>
-
-          <!-- Embedded PDF artifact retained from your current site -->
-          <figure>
-            <object data="onboarding/Meetings_Strategy_Concept_Design_NextGenEX.pdf#zoom=page-fit"
-                    type="application/pdf" width="100%" height="520" aria-label="Onboarding journeys and concept board">
-              <p>Your browser can’t display the PDF.
-                <a href="onboarding/Meetings_Strategy_Concept_Design_NextGenEX.pdf" target="_blank" rel="noopener">
-                  Open the onboarding journeys PDF</a>.
-              </p>
-            </object>
-            <figcaption>Workshop synthesis &amp; concept board: journeys, dependencies, and provisioning concept paths.</figcaption>
-          </figure>
-
-          <!-- Optional: add image thumbnails for any future onboarding assets -->
-          <!--
-          <figure>
-            <img class="img-fluid" src="onboarding/onboarding_flow.png" alt="Provisioning flow example">
-            <figcaption>Provisioning & access request flow (example screenflow).</figcaption>
-          </figure>
-          -->
-        </section>
-
-        <!-- Testimonials (optional) -->
-        <section id="testimonials" class="cs-section">
-          <h3>Stakeholder Feedback</h3>
-          <blockquote class="blockquote">
-            <p class="mb-0"><em>“The journey view finally shows who owns what—and when. It’s how we’ll get people productive on day one.”</em></p>
-            <footer class="blockquote-footer">HR Business Partner</footer>
-          </blockquote>
-          <blockquote class="blockquote">
-            <p class="mb-0"><em>“The provisioning patterns make approval paths explicit. This will save us hours per hire.”</em></p>
-            <footer class="blockquote-footer">IT Service Owner</footer>
-          </blockquote>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="cs-section">
-          <h3>Let’s Connect</h3>
-          <p>If you’re tackling onboarding friction across HR/IT/business, I’m happy to compare notes and outline a measurable plan.</p>
-          <p>
-            <a href="https://www.linkedin.com/in/john-riggin" target="_blank" rel="noopener">
-              <img class="img-fluid" src="grphx/li-in-bug_sm.png" alt="LinkedIn profile"> LinkedIn
-            </a><br>
-            <a class="lnk_blk" href="mailto:j.riggin@xd-pro.com">j.riggin@xd-pro.com</a><br>
-            <span id="phone-number">+1 978.844.8131</span>
-          </p>
-        </section>
-      </article>
-
-      <!-- Sticky ToC -->
-      <aside class="col-lg-4 pt-4" aria-label="On-page navigation">
-        <nav id="toc" class="cs-toc">
-          <h6 class="text-muted">On this page</h6>
-          <a href="#summary">Summary</a>
-          <a href="#context">Context &amp; Challenge</a>
-          <a href="#approach">Approach</a>
-          <a href="#results">Outcomes</a>
-          <a href="#deliverables">Deliverables</a>
-          <a href="#evidence">Evidence &amp; Visuals</a>
-          <a href="#testimonials">Stakeholder Feedback</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </aside>
+		  	<h6>The Work</h6>
+		  	<p>A project kickoff meeting occured and the collective team discussed the request, approach, and method.</p>
+			<p>After a research plan was formed, each team member began their review. Any system, platform, process, or information touchpoint was to be identified and documented. No additional requirement was placed upon a reviewer other than ground their assessment in professionally accepted heuristic design principles.</p>
+			<p>A general journey map framework was utilized by each reviewer to meticulously assess and document each step of their personal new hire experience. Positive and negative aspects of the individual journey were listed below key event milestones that each participant identified. Supporting artifacts were included as available, and sensitive personal information was obscured, E.g. personal compensation.</p>
+			<br><br>
+		</div>
+    </div><!-- end row -->
+	<div class="row">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+			<h6>Employee Mapped Journey</h6>
+				<a href="onboarding/my_journey_map_composite.png" alt="Participant journey mapp example">
+			<img class="img-fluid" src="onboarding/my_journey_map_composite.png" alt="Example journey map"></a>  
+          	</div>
+			<br><br>
+			<h6>Personal Contribution &amp; Deliverables</h6>
+			<ul>
+				<li>Research Strategy</li>
+				<li>Personal journey documentation</li>
+				<li>Supporting artifacts collected</li>
+			</ul>
+			<br><br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 justify-content-center">
+			<p>Reviewer journey maps were analyzed. 25 key events were identified.</p>
+			<br><br>
+          	<div class="col-12 text-center">
+			<h6>Key Events Identified</h6>
+				<a href="onboarding/key_events.png" alt="Link to key events graphic">
+			<img class="img-fluid" src="onboarding/key_events.png" alt="Key events graphic"></a>  
+          	</div>
+			<br><br>
+			<ul>
+				<li>Reviewed individual journey maps &amp; identified key touchpoints</li>
+			</ul>
+			<br><br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+			<h6>Journey Map Data Composite<br>Qualitative Analysis &amp; Quantification</h6>
+				<a href="onboarding/aggregated_journey_map.jpg" alt="Journey map composite">
+			<img class="img-fluid" src="onboarding/aggregated_journey_map.jpg" alt=""></a>  
+          	</div>
+		</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+       <div class="col-md-6 col-12 mt-md-0 mt-2">
+			<h6>Personal Contribution &amp; Deliverables</h6>
+			  <ul>
+				  <li>Data analysis strategy</li>
+				  <li>Data framework, aggregation, &amp; analysis</li>
+				  <li>Key journey moment identification</li>
+				  <li>Quantification of qualitative data</li>
+				  <li>Country-level journey variance analysis</li>
+				  <li>Stage sentiment theming</li>
+			  </ul>
+       </div>
+		<!--
+          <div class="col-md-6 col-12 mt-md-0 mt-2">
+			<h6>Personal Contribution &amp; Deliverables</h6>
+			  <ul>
+				  <li>Product Development &amp; Product Management Consulting</li>
+				  <li>Experience Design Strategy Consulting</li>
+				  <li>Collaborative Needs Analysis &amp; Use Case Workshops</li>
+				  <li>Experience &amp; Information Design Flows</li>
+				  <li>Written Requirements</li>
+				  <li>Concept Simulation Video</li>
+				  <li>Multi-Fidelity Prototyping</li>
+				  <li>Solutions Architecture Assistance</li>
+				  <li>Production Asset Design</li>
+				  <li>Dev &amp; QA Oversite with Audit Logs</li>
+				  <li>User Research &amp; User Acceptance Test Plans</li>
+				  <li>Product Evolution Roadmap </li>
+				  <li>V2 Concept Brainstorm &amp; Written Requiremets</li>
+			  </ul>
+          </div> -->
     </div>
-  </main>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+           		<h6>Quantification &amp; Data Visualization</h6>
+				<p><strong>Note:</strong> <em>It is acknowledged the data are not statistically relevant due to the small sample size, and follow-up research was required.</em></p>
+				<br><br>
+        	</div>
+				<img class="img-fluid" src="onboarding/data_quantification.jpg" alt="Journey map qualitative data, quantification."> 
+			<br><br>
+		</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-md-6 col-12 mt-md-0 mt-2">
+		<p>Data were moved to Excel for summation and visualization.</p>
+		<br>
+			<h6>Personal Contribution &amp; Deliverables</h6>
+			  <ul>
+				  <li>Data Analysis</li>
+				  <li>Data Visualization</li>
+			  </ul>
+    	</div>
+		<br><br>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+				<h6>Net Employee Experience Journey Signature</h6>
+				<img class="img-fluid" src="onboarding/net_employee_journey_signature.png" alt="Net employee experience journey signature.">  
+			</div>
+		</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-md-6 col-12 mt-md-0 mt-2">
+			<h6>Personal Contribution &amp; Deliverables</h6>
+			  <ul>
+				  <li>Data analysis and employee journey summation signature creation</li>
+				  <li>Collective data visualization</li>
+			  </ul>
+    	</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+				<h6>Employee Journey Heatmap Visualization</h6>
+				<img class="img-fluid" src="onboarding/journey_heatmap.png" alt="Net employee experience journey signature.">  
+			</div>
+		</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-md-6 col-12 mt-md-0 mt-2">
+			<h6>Personal Contribution &amp; Deliverables</h6>
+			  <ul>
+				  <li>Data analysis and employee journey summation signature</li>
+				  <li>Key event identification</li>
+			  </ul>
+    	</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+				<h6>Participant Comment Sums</h6>
+				<img class="img-fluid" src="onboarding/comment_sums.png" alt="Net employee experience journey signature.">  
+			</div>
+		</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+				<h6>Country Level Experience Sentiment Sums &amp; Juxtaposition</h6>
+				<img class="img-fluid" src="onboarding/sums.png" alt="Net employee experience journey signature.">  
+			</div>
+		</div>
+	</div>
+	<div class="row" style="padding-top: 1.5rem">
+		<div class="col-12 justify-content-center">
+          	<div class="col-12 text-center">
+				<h6>Country Level Experience SentimentVariance &amp; Juxtaposition</h6>
+				<img class="img-fluid" src="onboarding/varriance.png" alt="Net employee experience journey signature.">  
+			</div>
+		</div>
+	</div>
+</div><!-- end container -->
+</section>
+</div>		
+<section>
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col-12 justify-content-center">
+			  <div class="col-12 text-center">
+				<h3>Theme Identification</h3>
+			  </div>
+				<p>Affinity exercise performed based on 25 Key Events informed 6 general themes.</p>
+					<ol>
+						<li>Communications</li>
+						<li>Systems</li>
+						<li>Processes</li>
+						<li>Hardware</li>
+						<li>Support</li>
+						<li>Orientation</li>
+					</ol>
+				<br>
+				<br>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+            	<h6>Theme Affinity</h6>
+				<img class="img-fluid" src="onboarding/affinity.jpg" alt=""> 
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-md-6 col-12">
+				<h6>Personal Contribution &amp; Deliverables</h6>
+			  	<ul>
+				  <li>Affinity workshop lead</li>
+				  <li>Key event identification</li>
+			  	</ul>
+			</div>		
+        </div>
+	</div>
+<br>
+</section>
+<div class="jumbotron">
+<section>
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col-12 justify-content-center">
+			  <div class="col-12 text-center">
+				<h3>Sharing Research Findings</h3>
+			  </div>
+				<p>Based on the data analysis and review findgings affinty work, a presentation outline was created to present the design research findings and recommendations.</p>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+            	<h6>Presentation Outline</h6>
+				<img class="img-fluid" src="onboarding/presentation_prep.jpg" alt=""> 
+				</div>
+				<br><br>
+				<p>Members from the team met and collaboratively aligned on a presentation outline.</p>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+            	<h6>Presentation</h6>
+				<img class="img-fluid" src="onboarding/presentation_theme_slides.png" alt=""> 
+				</div>
+				<p>A formal presentation with all findings and recommendations was created and shared. Specific artifacts and additional content was aggregated and included in the presntation appendix.</p>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 1.5rem">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+            	<h6>Recommended Next-Steps</h6>
+				</div>
+					</ul>
+						<li>Acquire broader new hire feedback via Qualtrics, interviews, etc. – Establish a baseline of employee delight for onboarding</li>
+						<li>Acquire and review 6 month new hire survey data</li>
+						<li>Leverage People Insights dashboard data</li>
+						<li>Develop Talent representative and hiring manager journeys</li>
+						<li>Perform thorough expert review/experience audit of identified areas of measurable detractors</li>
+						<li>Concept generation and design proposals to test with employees</li>
+						<li>Measure improvement (A/B testing) and rollout successful changes or requirements change documentation hand-off to executing stakeholder for execution and development</li>
+						<li>Progress to next area of opportunity while monitoring EX enhancements</li>
+					</ul>
+			</div>
+			<br><br>
+		</div>
+	</section>
+</div>
+<section>
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col-12 justify-content-center">
+			  <div class="col-12 text-center">
+				<h3>Informed Evolution Strategy</h3>
+			  </div>
+				<p>Based on the inquiry findings and recommendations, various projects were initiated to enhance the overall employee talent experience - beginning with onboarding and moving towards a overhaul of the talent service delivery ecosystem.</p>
+				<p>Looking longer term through a strategic lens, I began vision design exploration for a transformational employee experience that transcended HR/Talent - expanding into platforms, hardware, and physical office spaces as a converged experience. The effort embodied collective pain points confirmed through peripherial research efforts. 
+				</p>
+				<p>Experience vision design sketch shared with global Enterprise Technology Solution Architects.</p>
+			</div>
+		</div>
+		<div class="row" style="padding: 1.5rem 0rem 2.5rem 0rem;">
+			<div class="col-12 justify-content-center">
+          		<div class="col-12 text-center">
+            	<h6>High-Level Solution Architecture</h6>
+					<a href="onboarding/Meetings_Strategy_Concept_Design_NextGenEX.pdf">
+				<img class="img-fluid" src="onboarding/Meetings_Strategy_Concept_Design_NextGenEX.png" alt="Meetings strategy next-generation emloyee experience"></a> 
+				</div>
+				<br><br>
+				<h6>Personal Contribution &amp; Deliverables</h6>
+				  <ul>
+					  <li>Strategic vision design sketch</li>
+				  </ul>
+			</div>
+		</div>
+	</div>
+<br>
+</section>
+<div class="jumbotron" style="padding-bottom: .5rem">
+<section>
+	<div class="col-12 text-center"><p>
+	<strong><a id="contact">Let's Connect</a></strong>
+	<br>
+	<p>
+	<a href="https://www.linkedin.com/in/john-riggin" target="_blank"><img clas="img-fluid" src="grphx/li-in-bug_sm.png" alt="LinkedIn logo"></a>
+	</p>						
+	<div id="phone-number"></div>
+	<script type="text/javascript" language="javascript">
+	<!--
+	document.addEventListener('DOMContentLoaded', function() {
+    const phoneNumber = '+1 978.844.8131';
+    const phoneNumberElement = document.getElementById('phone-number');
+	phoneNumberElement.textContent = phoneNumber;
+	});
+	-->
+	</script> 
+	<script type="text/javascript" language="javascript">
+		<!--
+		var name = "j.riggin";
+		var where = "xd-pro";
+		var type = "com";
 
-  <footer class="text-center bg-black" role="contentinfo">
-    <div class="container">
-      <div class="row"><div class="col-12">
-        <p id="ftr"></p>
-        <script>document.getElementById("ftr").innerHTML =
-          "UXPS Associates, LLC. &COPY " + (new Date()).getFullYear() + " All rights reserved.";</script>
-      </div></div>
-    </div>
-  </footer>
-
-  <!-- JS (keep your site paths) -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.4.1.js"></script>
-</body>
+		document.writeln("<a class=\"lnk_blk\" href=\"mailto:" + name + "@" + where + "." + type + "\">");
+		document.writeln(name + "@" + where + "." + type);
+		document.writeln("</a>");
+		-->
+	</script>
+	</p>
+	</div><!-- end row -->
+</section><!-- end contact info section -->
+</div> <!-- end jumbotron -->
+<footer class="text-center bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+           <p id="ftr"></p>
+			  <script>
+				  var year = new Date();
+				  document.getElementById("ftr").innerHTML = "UXPS Associates, LLC. &COPY " + year.getFullYear() + " All rights reserved.";
+			  </script>  
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
