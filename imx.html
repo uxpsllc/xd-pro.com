@@ -1,575 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-50KSH12GRL"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-50KSH12GRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'G-50KSH12GRL');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l] = w[l] || []; w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'}); var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5THNDTFB');</script>
+  <!-- End Google Tag Manager -->
 
-  		gtag('config', 'G-50KSH12GRL');
-	</script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5THNDTFB');</script>
-<!-- End Google Tag Manager -->
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>XD-Pro Incident Management Experience Transformation (IMX)</title>
-    <!-- Bootstrap -->
-	<!-- Original css <link href="css/revbootstrap-4.4.1.css" rel="stylesheet"> 
-		-->
-    <link href="css/revbootstrap-4.4.1.css" rel="stylesheet">
-  </head>
-  <body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5THNDTFB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-grad">
-      <a class="navbar-brand shadow2" href="index.html">J. Riggin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="approach.html">My Approach</a>
-          </li>
-          <li class="nav-item active dropdown">
-            <a class="nav-link shadow2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="experience_design.html">Experience Design</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="animation.html">Animation &amp; Visualization</a>
-				<div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="illustration.html">Illustration</a>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Incident Management Experience (IMX) – Case Study | XD-Pro</title>
+  <meta name="description" content="Principal-led UX case study: global Incident Management Experience (IMX) for EY. Scope, approach, outcomes, deliverables, and visuals.">
+  <link href="css/revbootstrap-4.4.1.css" rel="stylesheet">
+
+  <style>
+    /* --- Case Study Template Helpers --- */
+    .cs-hero {
+      background: linear-gradient(135deg, rgba(17,22,31,.95), rgba(29,40,62,.92));
+      color: #fff;
+      padding: 3rem 0 2rem;
+    }
+    .cs-outcomes .badge {
+      font-weight: 600;
+      padding: .6rem .8rem;
+      margin: .25rem .35rem .25rem 0;
+      border-radius: 999px;
+    }
+    .cs-meta {
+      background: #0f1522;
+      color: #dfe6f0;
+      border-radius: .75rem;
+      padding: 1rem 1.25rem;
+    }
+    .cs-section {
+      padding: 2.25rem 0 1.25rem;
+    }
+    .cs-section h3, .cs-section h2 { margin-bottom: 1rem; }
+    .cs-toc a { display:block; padding:.25rem 0; color:#6c757d; }
+    .cs-toc a:hover, .cs-toc a:focus { color:#111; text-decoration: none; }
+    @media (min-width: 992px) {
+      .cs-toc { position: sticky; top: 2rem; }
+    }
+    figure { margin: 1rem 0; }
+    figure img { border-radius: .5rem; }
+    figure figcaption { font-size: .9rem; color: #6c757d; margin-top: .35rem; }
+    .note { font-size: .9rem; color:#6c757d; }
+    .hilite { background: linear-gradient(transparent 60%, #ffee88 60%); }
+    /* Make dropdowns overlay content consistently (works with site navbar) */
+    .navbar { position: relative; z-index: 1030; }
+    .navbar .dropdown, .navbar .nav-item.dropdown, .navbar .btn-group { position: relative; }
+    .navbar .dropdown-menu {
+      position: absolute; top: calc(100% + .25rem); left: 0; right: auto;
+      z-index: 1080; margin-top:0; transform: none !important; overflow: visible;
+    }
+    .navbar .dropdown-menu.dropdown-menu-right,
+    .navbar .dropdown-menu.dropdown-menu-end { left:auto; right:0; }
+    .navbar .navbar-collapse, .navbar .navbar-nav, .navbar .container, .navbar .container-fluid { overflow: visible; }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="120">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5THNDTFB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Site Navbar (kept for consistency with xd-pro.com) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-grad">
+    <a class="navbar-brand shadow2" href="index.html">J. Riggin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="approach.html">My Approach</a></li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link shadow2 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="experience_design.html">Experience Design</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="animation.html">Animation &amp; Visualization</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="illustration.html">Illustration</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="cs-hero">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-8">
+          <h1 class="mb-2">Incident Management Experience <span class="hilite">(IMX)</span></h1>
+          <p class="lead mb-3">
+            Principal-led transformation of a global command, control, and communications system—spanning 5 regions,
+            150 countries, and 700+ offices—built on Microsoft cloud and integrated with Everbridge.
+          </p>
+          <div class="cs-outcomes">
+            <span class="badge badge-light">>90% operational efficiency</span>
+            <span class="badge badge-light">Executive-backed MVP funding</span>
+            <span class="badge badge-light">Unified, scalable workflow</span>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-3 mt-lg-0">
+          <div class="cs-meta">
+            <strong>My Role</strong>: Principal Experience Design Lead (Director) · Lead BX/UX Researcher<br>
+            <strong>Team</strong>: ~15 globally distributed<br>
+            <strong>Domain</strong>: Global Security &amp; Resilience<br>
+            <strong>Stack</strong>: Microsoft Cloud · Everbridge · Figma · Teams
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <main class="container">
+    <div class="row">
+      <!-- Main content -->
+      <article class="col-lg-8 pt-4">
+
+        <!-- Summary -->
+        <section id="summary" class="cs-section">
+          <h2>Summary</h2>
+          <p>I led the experience design strategy and delivery of EY’s Incident Management Experience—an automation-driven
+            platform that unified a fragmented information ecosystem into a single, scalable workflow for incident response.
+            The MVP launched with strong executive support and a funded enhancement roadmap.</p>
+
+          <figure>
+            <img class="img-fluid" src="imx/project_stages.png" alt="High-level IMX project stages from concept to launch">
+            <figcaption>Project arc from early concept to MVP and roadmap.</figcaption>
+          </figure>
+          <p class="note"><em>Note:</em> Excerpts are shown with intentionally reduced detail to protect IP.</p>
+        </section>
+
+        <!-- Context -->
+        <section id="context" class="cs-section">
+          <h3>Context &amp; Challenge</h3>
+          <p>Global Security needed one coherent experience to manage 90+ incident types, each with location-specific
+            playbooks, while ensuring speed, clarity, and access for a worldwide workforce. The legacy process was manual,
+            fragmented, and difficult to scale.</p>
+        </section>
+
+        <!-- Approach -->
+        <section id="approach" class="cs-section">
+          <h3>Approach</h3>
+          <h5 class="mt-2">Discover &amp; Align</h5>
+          <p>I ran design-thinking workshops and contextual inquiry to map roles, flows, triggers, and dependencies—creating a verified baseline to
+            measure improvement. I closed gaps with 1:1 SME sessions across regions to capture local workflows and regulatory constraints.</p>
+
+          <figure>
+            <img class="img-fluid" src="imx/collaboration_space_1.png" alt="Miro workshop artifacts capturing needs and priorities">
+            <figcaption>Virtual needs analysis workshops (Miro).</figcaption>
+          </figure>
+
+          <h5 class="mt-4">Design &amp; Prototype</h5>
+          <p>I produced service blueprints, modular UX flows, and an interactive Figma prototype. A Figma-based design system (components, tokens, patterns)
+            accelerated iteration and handoff, moving quickly from low-fi wireframes to polished, testable flows.</p>
+
+          <figure>
+            <img class="img-fluid" src="imx/IMX_UX_flow.png" alt="Example of IMX UX system flows in Figma">
+            <figcaption>Requirements-based UX flows, from wireframe to high fidelity.</figcaption>
+          </figure>
+
+          <h5 class="mt-4">Build &amp; Govern</h5>
+          <p>I authored a version-controlled requirements specification (functional &amp; non-functional) to ensure traceability, curb scope creep,
+            and seed UAT—becoming the single source of truth for the external development team.</p>
+
+          <figure>
+            <img class="img-fluid" src="imx/Requirements_doc.png" alt="Formal requirements document used as the single source of truth">
+            <figcaption>Formalized requirements documentation.</figcaption>
+          </figure>
+
+          <h5 class="mt-4">Test &amp; Iterate</h5>
+          <p>With a high-fidelity interactive prototype, we ran global usability tests; localization findings informed the V2 roadmap.
+            Stakeholder feedback remained continuous throughout, shaping UX and UI decisions.</p>
+
+          <figure>
+            <img class="img-fluid" src="imx/testing_flows.png" alt="Usability testing flows mapped for moderator guidance">
+            <figcaption>Usability test flows and moderator guidance.</figcaption>
+          </figure>
+        </section>
+
+        <!-- Results -->
+        <section id="results" class="cs-section">
+          <h3>Results &amp; Impact</h3>
+          <ul>
+            <li><strong>&gt;90% operational efficiency</strong> increase measured in live scenarios.</li>
+            <li><strong>MVP funded and unveiled</strong> at EY’s Global Security Conference with strong executive backing.</li>
+            <li><strong>Repeatable framework</strong> created for broader organizational adoption.</li>
+          </ul>
+
+          <figure>
+            <img class="img-fluid" src="imx/functional_components_lg.jpg" alt="Functional components of the final solution">
+            <figcaption>Functional staff-facing components.</figcaption>
+          </figure>
+        </section>
+
+        <!-- Deliverables -->
+        <section id="deliverables" class="cs-section">
+          <h3>Deliverables</h3>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Strategy &amp; Governance</h6>
+              <ul>
+                <li>Experience vision, decision principles, success metrics</li>
+                <li>Global incident taxonomy &amp; playbook templates</li>
+                <li>Roles/RACI and change governance</li>
+                <li>Version-controlled requirements (F/NFR, accessibility baked-in)</li>
+              </ul>
+
+              <h6>Research &amp; Evidence</h6>
+              <ul>
+                <li>Discovery report &amp; baseline metrics</li>
+                <li>Contextual inquiry, journey maps, role archetypes</li>
+                <li>Usability protocols, scripts, findings, deltas</li>
+              </ul>
             </div>
-			</li>
-        </ul>
-      </div>
-    </nav>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mt-4 mb-4">
-			  <h1><span class="hilite">Incident Management Experience (IMX)</span></h1>
-          </div>
-        </div>
-      </div>
-    </section><!--  bg-black -->
-	<!--Portfolio section -->
-<div class="jumbotron">
-<section>		
-	<div class="container">
-		<div class="row mt-4">
-			<div class="col-12 justify-content-center">
-			  <div class="col-12 text-center">
-				  <h3>Project Summary</h3>
-			  </div>
-				<p>I led the experience design strategy and delivery of EY’s Incident Management Experience transformation — an automation-driven, global command, control, and communications system spanning five regions, 150 countries, and 700+ offices. The solution was built on Microsoft’s cloud platform and integrated with <a href="https://www.everbridge.com/products/mass-notification-and-incident-communications/">Everbridge</a>, a mass notification system. The MVP unified a diverse information ecosystem into a single, scalable workflow.</p>
-				<br>
-				<h6><Span class="hilite">My Role</span></h6>
-				<p>Principal Experience Design lead (Experience Design Director; Lead BX/UX Researcher). I guided a globally distributed team of ~15, set the vision, ran research and design, and established the operating model (requirements, governance, and DesignOps).</p>
-				<br>
-				<h6><Span class="hilite">Context &amp; Challenge</span></h6>
-				<p>Global Security needed one coherent experience to manage 90+ incident types — each with location-specific playbooks — while ensuring speed, accuracy, and access for a worldwide risk management team. The legacy process was manual, fragmented, and hard to scale.
-				</p>
-				<br>
-				<h6><Span class="hilite">Approach</span></h6>
-				<p><span class="hilite">Discover &amp; Align</span><br>Orchestrated stakeholder workshops and contextual inquiry to map roles, flows, triggers, and dependencies; created a verified baseline to measure improvement. </p>
 
-				<p><span class="hilite">Design &amp; Prototype</span><br>Produced service blueprints, modular UX flows, and an interactive Figma prototype; stood up a Teams/Figma design system to accelerate iteration and handoff.</p>
+            <div class="col-md-6">
+              <h6>Service &amp; Interaction Design</h6>
+              <ul>
+                <li>Service blueprints, IA/content model, notification templates</li>
+                <li>Task flows, wireframes, high-fidelity UI</li>
+                <li>Interaction specs, error/edge-case playbooks</li>
+              </ul>
 
-				<p><span class="hilite">Build &amp; Govern</span><br>Authored the formal, version-controlled requirements that became the single source of truth for development and future change control.</p> 
-				
-				<p><span class="hilite">Test &amp; Iterate</span><br>Ran global usability with localized findings, refining UI and workflows; prepared a V2 roadmap informed by evidence.</p>
-				<br>
-				
-				<h6><Span class="hilite">Results &amp; Impact</span></h6>
-				<ul>
-					<li>>90% operational efficiency increase measured in live scenarios.</li> 
+              <h6>Systems &amp; Enablement</h6>
+              <ul>
+                <li>Figma prototype &amp; component library</li>
+                <li>Integration patterns (Microsoft Cloud + Everbridge)</li>
+                <li>Backlog grooming with UX acceptance criteria</li>
+                <li>Admin console patterns for sustainability</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-					<li>MVP delivered and unveiled at EY’s Global Security Conference; the solution earned strong executive support and additional enhancement funding.</li>
+        <!-- Evidence / Gallery -->
+        <section id="evidence" class="cs-section">
+          <h3>Evidence &amp; Visuals</h3>
 
-					<li>Delivered a repeatable framework other organizations can adapt.</li>
-				</ul>
-				
-					<h6><Span class="hilite">What Stakeholders Said</span></h6>
-				<p>Global Security leaders praised the clarity and speed of the new experience—calling it the best crisis management software they’d seen and a catalyst for how EY runs incident response.</p>
-				<br>
-				<br>
-				<p><Strong>Note:</Strong> <em>This case study only presents project excerpts. Content has intentionally been obscured and presented in lower resolution to protect IP and solution design details.</em></p>
-			</div>
-        </div><!-- end row -->
-	</div><!-- end container -->
-</section>
-</div>
-<section>
-      <div class="container">
-        <div class="row mt-4">
-			<div class="col-12 justify-content-center">
-				<div class="col-12 text-center">
-				<h3>Approach</h3>
-				</div>
-				<p>To achieve success, a user-centric design approach was followed.</p>
-        	</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center"> 
-          		<div class="col-12 text-center">
-				<h6>Experience Design Process</h6>
-				<img class="img-fluid" src="imx/imx_process.png" alt="">  
-				<p><br></p>
-          		</div>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>General Project Overview</h6>
-				<a href="imx/project_stages.png" alt="">
-				<img class="img-fluid" src="imx/project_stages.png" alt=""></a>
-				<br><br>
-          		</div>
-				<p>The project started with aggregated abstract insights and evolved to a final concrete solution.
-			  </p>
-			</div>
-		</div>
-      </div>
-</section>  
-<div class="jumbotron">
-<section>	
-<div class="container">
-	<div class="row mt-4" >
-		<div class="col-12 justify-content-center">
-          <div class="col-12 text-center">
-            <h3>Concept &amp; Ideation Phase</h3>
-          </div>
-		  	<h6>The Work</h6>
-		  	<p>The project kicked off with an initial gathering of cross-functional business stakeholders and a vision was shared - covering what, why, whom, and a definition of success.</p>
-			<div class="col-12 text-center">
-			<h6>Project Kickoff Whiteboard</h6>
-			<img class="img-fluid" src="imx/Initial_capture.png" alt="Concept sketches"></a> 
-			<br><br>
-          	</div>
-			<p>Working internationally, I began with a virtual design-thinking workshop to surface needs, roles, dependencies, and success criteria—aligning everyone on the problem frame. From that output, I produced low-fidelity concept sketches to drive vision conversations and fast decisions. With several domain SMEs new to product development, I provided delivery leadership and guided a structured, evidence-based design cadence.</p>
-		</div>
-    </div><!-- end row -->
-	<div class="row">
-		<div class="col-12 justify-content-center">
-          	<div class="col-12 text-center">
-			<h6>Initial Concept Sketch</h6>
-				<a href="imx/concept_sketchs.pdf" alt="PDF of concept">
-			<img class="img-fluid" src="imx/sketch_composite.png" alt="Concept sketches"></a>  
-          	</div>
-		</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-       <div class="col-md-6 col-12 mt-md-0 mt-2">
-			<h6>Personal Contribution &amp; Deliverables</h6>
-			  <ul>
-				  <li>Product Development &amp; Product Management Consulting</li>
-				  <li>Experience Design Strategy</li>
-				  <li>Design Thinking Research Workshop</li>
-				  <li>Experience Concept Illustration</li>
-			  </ul>
-       </div>
-		<!--
-          <div class="col-md-6 col-12 mt-md-0 mt-2">
-			<h6>Personal Contribution &amp; Deliverables</h6>
-			  <ul>
-				  <li>Product Development &amp; Product Management Consulting</li>
-				  <li>Experience Design Strategy Consulting</li>
-				  <li>Collaborative Needs Analysis &amp; Use Case Workshops</li>
-				  <li>Experience &amp; Information Design Flows</li>
-				  <li>Written Requirements</li>
-				  <li>Concept Simulation Video</li>
-				  <li>Multi-Fidelity Prototyping</li>
-				  <li>Solutions Architecture Assistance</li>
-				  <li>Production Asset Design</li>
-				  <li>Dev &amp; QA Oversite with Audit Logs</li>
-				  <li>User Research &amp; User Acceptance Test Plans</li>
-				  <li>Product Evolution Roadmap </li>
-				  <li>V2 Concept Brainstorm &amp; Written Requiremets</li>
-			  </ul>
-          </div> -->
-      </div> 
-	  <div class="row mt-4">
-      	<div class="col-12 text-center">
-            <h6>Concept Visualization Video</h6>
-        </div>
-		  <p>Funding wasn’t yet secured, so I produced an animated story visualization to make the value proposition tangible and paired it with the business case. The review committee grasped the impact immediately and approved MVP funding.</p>
-   	 </div>
-	<div class="row" style="padding-top: 1.5rem">
-		<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-			<img class="img-fluid" src="imx/funding_vid.png" alt="">  
-			</div>
-		</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-		<div class="col-md-6 col-12 mt-md-0 mt-2">
-			<h6>Personal Contribution &amp; Deliverables</h6>
-			  <ul>
-				  <li>Script Production Guidance</li>
-				  <li>Visual Asset Creation</li>
-				  <li>Experience Scenario Animation &amp; Video Editing</li>
-			  </ul>
-    	</div>
-	</div>
-</div><!-- end container -->
-</section>
-</div>		
-<section>
-	<div class="container">
-		<div class="row mt-4">
-			<div class="col-12 justify-content-center">
-			  <div class="col-12 text-center">
-				<h3>Needs Analysis &amp; Requirements Gathering</h3>
-			  </div>
-				<p>I led deep investigative research—planning and facilitating multi-session design-thinking workshops in Miro to capture business and technical requirements, user needs, and priority use cases.</p>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-            		<h6>Needs Analysis Workshops &amp; Requirements</h6>
-					<img class="img-fluid" src="imx/collaboration_space_1.png" alt="Workshop question capture">
-					<br><br>
-				</div>
-				<p>I closed gaps with follow-up contextual inquiry—meeting 1:1 with regional SMEs to unpack end-user needs, current workflows, and regional/regulatory constraints—capturing the critical details that shaped a viable solution.</p>
-				<br>
-				<div class="col-12 text-center">
-					<img class="img-fluid" src="imx/UX_risk_assessment.png" alt="Workshop question capture">
-					<br><br>
-					<img class="img-fluid" src="imx/telemetry_metrics.png" alt="Workshop question capture">
-					<br><br>
-				</div>
-				<p>I ran expert reviews of incumbent systems in parallel—surfacing hidden dependencies and, through targeted workshops, closing gaps in the highly manual process. The findings defined the experience baseline and KPIs used to measure improvement.</p>
-				<br>
-				<div class="col-12 text-center">
-					<img class="img-fluid" src="imx/creation_logic.png" alt="Workshop question capture">
-				<br><br>
-				</div>
-				<p>I used contextual inquiry to surface primary and supporting processes, then mapped role-based workflows end-to-end—systems, data, and documents across inputs, outputs, and conditional triggers. We defined attributes (location, rank, role, incident type, tasks) to ground personas. I then produced the program’s first composite incident flow; SMEs validated it and added role- and condition-specific variants that informed requirements and edge-case handling.</p>
-				<br>
-				<div class="col-12 text-center">
-					<img class="img-fluid" src="imx/Base_requirements.png" alt="Workshop question capture">
-				<br><br>
-				</div>
-				<p>I captured requirements through participatory virtual workshops, then structured them in an Excel-based framework—tracking use cases and enabling stakeholder review, ranking, and prioritization into the MVP and roadmap.</p>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-            	<h6>Requirements &amp; Needs Prioritization</h6>
-				<img class="img-fluid" src="imx/Workshop_questions.png" alt="Workshop question capture">
-				</div>
-				<br><br>
-				<p>I formalized a version-controlled requirements spec in a structured Microsoft Word template—ensuring traceability, curbing scope creep, and seeding UAT. It became the single source of truth and the build blueprint for the external development team.</p>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-md-6 col-12">
-				<h6>Personal Contribution &amp; Deliverables</h6>
-			  	<ul>
-				  	<li>Workshop Planning &amp; Template Creation (<a href="https://miro.com/product-overview/">Miro</a> Capture)</li>
-					<li>User Types &amp; Persona Identification</li>
-					<li>Subject Matter Expert Contextual Inquiry</li>
-				  	<li>Workflow &amp; Incident Documentation Dependency Capture</li>
-					<li>Needs &amp; Gap Analysis, Expert Reviews</li>
-				  	<li>Formal Requirements Documentation Framework</li>
-					<li>Annotated Experience Design Requirements</li>
-					<li>Solution Architecture Contribution</li>
-			  	</ul>
-          	</div>		
-        </div><!--
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6><a href="images/2D_Photoshop_Illustration_.JPG">Micro-Chip Engineering Design Capability</a></h6>
-				<img class="img-fluid" src="images/Chip_engineering_sm.jpg" alt="">  
-				</div>
-			</div>
-		</div> -->
-	</div>
-<br>
-</section>
-<div class="jumbotron">
-<section>	
-<div class="container">
-	<div class="row mt-4">
-		<div class="col-12 justify-content-center">
-		  <div class="col-12 text-center">
-            <h3>Design &amp; Develop</h3>
-          	</div>
-			<p>Grounded in the draft functional requirements and research evidence, I mapped user and system flows and produced early UI concepts and interactive prototypes to validate the approach.</p>
-   	 	</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Virtual Cross-Functional Participatory Workshops</h6>
-				<img class="img-fluid" src="imx/collaboration_space_2.png" alt="">
-					<br><br>
-				<img class="img-fluid" src="imx/input_output.png" alt="">
-					<br><br>
-				<img class="img-fluid" src="imx/Taxonomy_IA.png" alt="">
-				<br><br>
-       		  </div>
-				<p>I kept stakeholder input continuous—running a participatory design cadence that closed requirements gaps. My user flows and service blueprints surfaced process breaks and opportunities, turning the abstract concept into a concrete solution with a clear information architecture.</p>
-			</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Detailed Solution Design</h6>
-				<img class="img-fluid" src="imx/hla_creation_flow.png" alt="">
-				<br><br>
-       		  </div>
-				<p>All aspected of the solution design were captured in flows.</p>
-			</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Formalized Requirements Documentation</h6>
-				<img class="img-fluid" src="imx/Requirements_doc.png" alt="">
-				<br><br>
-       		  </div>
-				<p>I delivered an implementation-ready requirements spec—detailing every UX element, system behavior, and edge case—that served as the build blueprint for the external development team.</p>
-			</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-				<div class="col-12 text-center">
-					<h6>Requirements-Based UX Flow Modules</h6>
-					<p>(Wireframe To High Fidelity Figma Prototype)</p>
-				<img class="img-fluid" src="imx/prototype_1.png" alt="Prototype one">	
-				<br><br>	
-				<img class="img-fluid" src="imx/module_iteration.png" alt="Module creation and iteration">
-				<br><br>
-				<img class="img-fluid" src="imx/IMX_UX_flow.png" alt="UX system flows">
-				<br><br>
-       		  	</div>
-				<p>I stood up an EY Teams, Figma-based design system — components, tokens, and patterns—so we could move quickly from low-fidelity wireframes to polished, interactive prototypes for user testing.</p>
-				<br>
-				<div class="col-12 text-center">
-				<h6>First Run &amp; Service Provisioning Experience</h6>
-				<img class="img-fluid" src="imx/first_run_provisioning.png" alt="">
-				<br><br>
-       		  </div>
-				<p>I designed a first-run provisioning flow alongside the core experience—integrated with role-based access—so only authorized users onboard. Everyone else is routed to an informational page with a clear, self-serve access-request path.</p>
-			</div>
-		</div>
-	<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Iterative Design - Experience Components &amp; Production Asset Creation</h6>
-				<img class="img-fluid" src="imx/iconography.png" alt="">
-					<br><br>
-				<img class="img-fluid" src="imx/design.png" alt="">
-				<br><br>
-          		</div>
-				<p>Based on global user testing, iterations to the design were made and final prodcution assets were tested for global regional acceptance before deployment.</p>
-			</div>
-	</div>
-	<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Requirements-Based Service Admin UX Flows<br>(Wireframe To High Fidelity Figma Prototype)</h6>
-				<img class="img-fluid" src="imx/admin_experience.png" alt="">
-				<br><br>
-       		  </div>
-				<p>To support the general user experience and provide a means to extend and evolve the solution, a backend administrative experience was developed. This component allowed for new templates to be introduced, user permissions updates, and general management of all supporting system components.</p>
-			</div>
-		</div>
-</div><!-- end container -->
-</section>
-</div>
-<section>
-	<div class="container">
-		<div class="row mt-4">
-			<div class="col-12 justify-content-center">
-			  <div class="col-12 text-center">
-				<h3>Test &amp; Evolve</h3>
-			  </div>
-				<p>I kept validation continuous across user roles, using stakeholder feedback to refine the UX and UI. I then ran global testing of a high-fidelity interactive prototype, and localization insights directly informed the V2 roadmap.</p>
-			</div>
-			<br><br>
-   	 	</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>User Study Preparation</h6>
-				<img class="img-fluid" src="imx/test_prep.png" alt="Prototype testing flows for usability study">
-				<br><br>
-          		</div>
-				<p>I partnered with a senior research lead to craft an independent test protocol—ensuring unbiased, globally diverse feedback. We defined tasks and target participants upfront, then aligned stakeholders on the study design before the research lead conducted sessions.</p>
-			</div>
-			<br><br>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Usability Prototype Testing Flows</h6>
-				<img class="img-fluid" src="imx/testing_flows.png" alt="Prototype testing flows for usability study">
-				<br><br>
-          		</div>
-				<p>I tested a working Figma prototype and, to support the research lead, authored step-by-step task flows detailing user and system actions—providing a moderator-ready map to plan and run the virtual sessions.</p>
-			</div>
-			<br><br>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Development Audits &amp; Regression Quality Assurance</h6>
-				<img class="img-fluid" src="imx/regression_QA.png" alt="Prototype testing flows for usability study">  
-				  <p><br></p>
-       		  </div>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Product Launch &amp; Functional Staff Facing Components</h6>
-				<img class="img-fluid" src="imx/functional_components_lg.jpg" alt="Final solution components image">  
-				  <p><br></p>
-       		  </div>
-			</div>
-		</div>
-		<div class="row" style="padding-top: 1.5rem">
-			<div class="col-12 justify-content-center">
-          		<div class="col-12 text-center">
-				<h6>Product Roadmap</h6>
-				<img class="img-fluid" src="imx/v2roadmap.png" alt="">  
-					<p><br></p>
-          		</div>
-			</div>
-		</div>
-	</div>
-<br>
-</section>
-<div class="jumbotron">
-<section>	
-<div class="container">
-	<div class="row mt-4">
-      <div class="col-12 text-center">
-            <h3>Stakeholder Testamonials</h3>
-          </div>
-			<p>When the MVP was rolled out at EY's Global Security Conference in Boston, MA, the respsonse was overwhelmingly positive.</p>
-   	</div>
-	<div class="row" style="padding-bottom: 1rem">
-          <div class="col-12 mt-md-0 mt-2">
-			<img Style="image-fluid " src="imx/quote.png" alt="Quotation mark graphic">
-			<p><em><strong><span class="hilite">Jay's contributions</span></strong> will <strong><span class="hilite">simplify the process for our</span></strong> stakeholders many of which are <strong><span class="hilite">senior leaders across the EY global organization.</span></strong></em></p>
-			<h6>Lisa T.</h6>
-			<p>Director - Global Business Resilience</p>
-          </div>
-        </div><!-- end row -->
-		<div class="row" style="padding-bottom: 1rem">
-          <div class="col-md-6 col-12 mt-md-0 mt-2">
-			  <img Style="image-fluid" src="imx/quote.png" alt="Quotation mark graphic">
-			  <p><em><strong><span class="hilite">Jay</span></strong> takes the opportunity to listen and really understand the needs of the stakeholders and then develops a technological idea to meet the need of the team. His years of experience outside EY has really complimented the work he's doing in the firm and has <strong><span class="hilite">provided real value</span></strong> as we work through this technological solution.</em></p>
-			<h6>Dan Y.</h6>
-			  <p>U.S. Central Regional Security Manager</p>
-          </div>
-	  	<div class="col-md-6 col-12 mt-md-0 mt-2">
-			<img Style="image-fluid" src="imx/quote.png" alt="Quotation mark graphic">
-			<p><em><strong><span class="hilite">Jay consistently</spaan></strong> adds value and does a great job in challenging the team’s assumptions. Asking us to think of alternative approaches, <strong><span class="hilite">helps us come to a better final product</span></strong> and to better understand why we are making certain decisions.</em></p>
-		<h6>Randolph M.</h6>
-		  <p>Global Physical Security &amp; Technology - Strategic Lead</p>
-        </div> 
-        </div><!-- end row -->
-		<div class="row" style="padding-bottom: 1rem">
-			<div class="col-md-6 col-12 mt-md-0 mt-2">
-			<img Style="image-fluid" src="imx/quote.png" alt="Quotation mark graphic">
-				<p><em><strong><span class="hilite">Jay really</span></strong> listens to understand the needs of stakeholders and <strong><span class="hilite">builds effective solutions</span></strong> to meet those requirements.</em></p>
-			<h6>Edward H.</h6>
-			<p>IMX Project Manager - Global Security</p>
-          </div>
-          <div class="col-md-6 col-12 mt-md-0 mt-2">
-			<img Style="image-fluid" src="imx/quote.png" alt="Quotation mark graphic">
-			  <p><em><strong><span class="hilite">Jay</span></strong> has <strong><span class="hilite">provided valuable feedback</span></strong> by making Global Security aware <strong><span class="hilite">of a gap</span></strong> in the existing Everbridge Mass Notification System. Doing so has made us aware of a glitch <strong><span class="hilite">in need of prompt action and repair.</span></strong></em></p>
-			<h6>Sherry F.</h6>
-			<p>Crisis Management &amp; Business Continuity - Global Security</p>
-          </div>
-        </div><!-- end row -->
-		<div class="row" style="padding-bottom: 2.5rem">
-          <div class="col-md-6 col-12 mt-md-0 mt-2">
-			<img Style="image-fluid" src="imx/quote.png" alt="Quotation mark graphic">
-			<p><em>This is the best Crisis Management software I’ve ever seen.</em></p>
-			<h6>Bruno K.</h6>
-			<p>Director - Security Risk Management Leader - Europe West</p>
-          </div>
-          <div class="col-md-6 col-12 mt-md-0 mt-2">
-			<img Style="image-fluid" src="imx/quote.png" alt="Quotation mark graphic">
-			<p><em>This is going to change Crisis Management at EY.</em></p>
-			<h6>Ankush M.</h6>
-			<p>Director - Risk Management – Global Delivery Services</p>
-          </div>
-        </div><!-- end row -->
-</div><!-- end container -->
-</section>
-</div>
-<section>
-	<div class="col-12 text-center"><p>
-	<strong><a id="contact">Let's Connect</a></strong>
-	<br>
-	<p>
-	<a href="https://www.linkedin.com/in/john-riggin" target="_blank"><img clas="img-fluid" src="grphx/li-in-bug_sm.png" alt="LinkedIn logo"></a>
-	</p>						
-	<div id="phone-number"></div>
-	<script type="text/javascript" language="javascript">
-	<!--
-	document.addEventListener('DOMContentLoaded', function() {
-    const phoneNumber = '+1 978.844.8131';
-    const phoneNumberElement = document.getElementById('phone-number');
-	phoneNumberElement.textContent = phoneNumber;
-	});
-	-->
-	</script> 
-	<script type="text/javascript" language="javascript">
-		<!--
-		var name = "j.riggin";
-		var where = "xd-pro";
-		var type = "com";
+          <figure>
+            <img class="img-fluid" src="imx/Initial_capture.png" alt="Kickoff whiteboard capture of needs and goals">
+            <figcaption>Kickoff whiteboard—vision, needs, and success criteria.</figcaption>
+          </figure>
 
-		document.writeln("<a class=\"lnk_blk\" href=\"mailto:" + name + "@" + where + "." + type + "\">");
-		document.writeln(name + "@" + where + "." + type);
-		document.writeln("</a>");
-		//-->
-	</script>
-	</p>
-	</div><!-- end row -->
-</section><!-- end contact info section -->	  
-<footer class="text-center bg-black">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-           <p id="ftr"></p>
-			  <script>
-				  var year = new Date();
-				  document.getElementById("ftr").innerHTML = "UXPS Associates, LLC. &COPY " + year.getFullYear() + " All rights reserved.";
-			  </script>  
-          </div>
-        </div>
-      </div>
-    </footer>		
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-  </body>
-</html>
+          <figure>
+            <img class="img-fluid" src="imx/sketch_composite.png" alt="Composite of early concept sketches">
+            <figcaption>Early concept sketches used to drive vision decisions.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img-fluid" src="imx/funding_vid.png" alt="Storyboard still for animated funding video">
+            <figcaption>Animated story visualization submitted with business case; MVP funding approved.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img-fluid" src="imx/hla_creation_flow.png" alt="High-level creation flow for incidents">
+            <figcaption>Detailed solution flows captured end-to-end.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img-fluid" src="imx/admin_experience.png" alt="Admin experience screens for templates and roles">
+            <figcaption>Administrative console to scale templates and roles.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="img-fluid" src="imx/v2roadmap.png" alt="V2 product roadmap informed by global testing">
+            <figcaption>V2 roadmap driven by global localization insights.</figcaption>
+          </figure>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="cs-section">
+          <h3>Stakeholder Testimonials</h3>
+          <blockquote class="blockquote">
+            <p class="mb-0"><em>“Jay’s contributions will simplify the process for our stakeholders—many of whom are senior leaders across EY globally.”</em></p>
+            <footer class="blockquote-footer">Lisa T., Director – Global Business Resilience</footer>
+          </blockquote>
+          <blockquote class="blockquote">
+            <p class="mb-0"><em>“He listens to understand needs and builds effective solutions. The value is real.”</em></p>
+            <footer class="blockquote-footer">Edward H., IMX Project Manager – Global Security</footer>
+          </blockquote>
+          <blockquote class="blockquote">
+            <p class="mb-0"><em>“This is the best crisis management software I’ve ever seen.”</em></p>
+            <footer class="blockquote-footer">Bruno K., Director – Security Risk Management, Europe West</footer>
+          </blockquote>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="cs-section">
+          <h3>Let’s Connect</h3>
+          <p>If you’re tackling complex, cross-regional operations work and need measurable design outcomes, I’m happy to compare notes.</p>
+          <p>
+            <a href="https://www.linkedin.com/in/john-riggin" target="_blank" rel="noopener">
+              <img class="img-fluid" src="grphx/li-in-bug_sm.png" alt="LinkedIn profile"> LinkedIn
+            </a><br>
+            <a class="lnk_blk" href="mailto:j.riggin@xd-pro.com">j.riggin@xd-pro.com</a><
