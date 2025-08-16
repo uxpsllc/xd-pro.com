@@ -23,6 +23,48 @@
     <title>XD-Pro Experience Design</title>
     <!-- Bootstrap -->
     <link href="css/revbootstrap-4.4.1.css" rel="stylesheet">
+	  /* xdpro-dropdown-overlay-fix.css
+   Purpose: ensure .dropdown-menu overlays page content (no clipping/underlap)
+   Scope: Bootstrap 4.x/5.x navbars & dropdowns
+*/
+
+/* 1) Give the navbar a stacking context above page sections */
+.navbar {
+  position: relative;             /* required for z-index to apply */
+  z-index: 1030;                  /* aligns with Bootstrap's scale for navbars */
+}
+
+/* 2) Make dropdown menus true overlays (above cards/sections/etc.) */
+.navbar .dropdown-menu {
+  position: absolute;             /* detach from normal flow */
+  z-index: 1080;                  /* above dropdown(1000), fixed/sticky(1020–1030) */
+  overflow: visible;              /* prevent clipping inside the menu itself */
+}
+
+/* 3) Prevent parent containers from clipping the menu */
+.navbar .navbar-collapse,
+.navbar .navbar-nav,
+.navbar .container,
+.navbar .container-fluid {
+  overflow: visible;
+}
+
+/* 4) Let the menu escape the height of the nav item */
+.navbar .nav-item.dropdown {
+  position: static;               /* avoids unintended clipping */
+}
+
+/* 5) Minor QoL: consistent spacing when open */
+.dropdown-menu.show {
+  display: block;
+  margin-top: .25rem;
+}
+
+/* Optional: if any custom styles added transforms to the collapse area,
+   they can create a new stacking context. Unset them while open. */
+.navbar .navbar-collapse.show {
+  transform: none !important;
+}
   </head>
   <body>
 	<!-- Google Tag Manager (noscript) -->
