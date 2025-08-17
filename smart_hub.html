@@ -60,4 +60,327 @@
 
     /* Navbar: split “Portfolio” link + overlay dropdown (same fix as IMX) */
     .navbar { position: relative; z-index: 1030; }
-    .navbar .dropdown, .navbar .nav-item.dropdown, .navbar .btn-group { positio
+    .navbar .dropdown, .navbar .nav-item.dropdown, .navbar .btn-group { position: relative; }
+    .navbar .dropdown-menu {
+      position: absolute; top: calc(100% + .25rem); left: 0; right: auto;
+      z-index: 1080; margin-top:0; transform: none !important; overflow: visible;
+    }
+    .navbar .dropdown-menu.dropdown-menu-right,
+    .navbar .dropdown-menu.dropdown-menu-end { left:auto; right:0; }
+    .navbar .navbar-collapse, .navbar .navbar-nav, .navbar .container, .navbar .container-fluid { overflow: visible; }
+    .navbar .nav-item-split { display: inline-flex; align-items: center; }
+    .navbar .nav-item-split .nav-link { padding-right: .5rem; }
+    .navbar .nav-item-split .nav-link.caret-only { padding-left: .25rem; padding-right: .75rem; }
+    @media (max-width: 991.98px) { .navbar .nav-item-split { display:block; } }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#toc" data-offset="120">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5THNDTFB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Site Navbar (matches IMX; Portfolio is a real link + caret toggle) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-grad">
+    <a class="navbar-brand shadow2" href="index.html">J. Riggin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+      aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="approach.html">My Approach</a></li>
+
+        <li class="nav-item dropdown nav-item-split active">
+          <a class="nav-link" href="experience_design.html">Portfolio</a>
+          <a class="nav-link dropdown-toggle caret-only" href="#" id="navbarDropdownPortfolio"
+             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+             aria-label="Toggle portfolio menu"><span class="sr-only">Toggle portfolio submenu</span></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+            <a class="dropdown-item" href="experience_design.html">Experience Design</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="animation.html">Animation &amp; Visualization</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="illustration.html">Illustration</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="cs-hero">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-8">
+          <h1 class="mb-2">Verizon <span class="hilite">Smart Hub</span></h1>
+          <p class="lead mb-3">
+            Principal-led evolution of a next-gen wireless home router with voice and integrated home controls—companion
+            mobile app, IFTTT capability, and over-the-air management.
+          </p>
+          <div class="cs-outcomes">
+            <span class="badge badge-light">Commercial launch (consumer market)</span>
+            <span class="badge badge-light">Recurring revenue in the $100Ms</span>
+            <span class="badge badge-light">Portfolio UX refresh &amp; OTA capability</span>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-3 mt-lg-0">
+          <div class="cs-meta">
+            <strong>My Role</strong>: Data Devices Portfolio Experience Design Manager · Lead Sr. Designer · UX Researcher<br>
+            <strong>Partners</strong>: Product Line Mgmt · Industrial Design · Network Ops · Engineering<br>
+            <strong>Scope</strong>: First-run UX (device, app, web) · Service blueprinting · Requirements &amp; QA<br>
+            <strong>Stack</strong>: Figma · Miro · IFTTT · Verizon Network
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <main class="container">
+    <div class="row">
+      <!-- Main content -->
+      <article class="col-lg-8 pt-4">
+        <!-- Summary -->
+        <section id="summary" class="cs-section">
+          <h2>Summary</h2>
+          <p>
+            I led the Smart Hub experience from concept to commercialization—defining first-run setup across device, app, and web;
+            aligning portfolio requirements; and establishing patterns for remote management. The result: a launched product,
+            refreshed portfolio UX, and a durable revenue stream.
+          </p>
+
+          <figure>
+            <img class="img-fluid" src="smart_hub/approach_process.png" alt="Experience design approach used on Smart Hub">
+            <figcaption>Experience design approach: research → define → design → verify.</figcaption>
+          </figure>
+
+          <p class="note"><em>Note:</em> Excerpts are intentionally reduced to protect IP.</p>
+        </section>
+
+        <!-- Context -->
+        <section id="context" class="cs-section">
+          <h3>Context &amp; Challenge</h3>
+          <p>
+            The opportunity: expand a connected-home portfolio with a smart router that unifies voice, automation, and secure
+            remote control. We needed one coherent first-run experience, clear requirements for device and app, and a path to
+            scale across the portfolio without introducing risk.
+          </p>
+        </section>
+
+        <!-- Approach -->
+        <section id="approach" class="cs-section">
+          <h3>Approach</h3>
+
+          <h5 class="mt-2">Discover &amp; Align</h5>
+          <p>
+            I benchmarked the competitive landscape, identified target segments and personas, and socialized a future vision
+            for remote control of an IoT ecosystem—anchoring the cross-functional plan and schedule.
+          </p>
+
+          <figure>
+            <a href="smart_hub/HomeAutomation_Exploration2013.pdf">
+              <img class="img-fluid" src="smart_hub/HomeAutomation_Exploration.png" alt="Mobile app vision for remote home control">
+            </a>
+            <figcaption>Mobile app vision (linked PDF) used to align leadership on feasibility.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/UX_dev_schedule.png">
+              <img class="img-fluid" src="smart_hub/UX_dev_schedule.png" alt="UX workstream schedule">
+            </a>
+            <figcaption>UX activity timeline and cross-functional dependencies.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/initial_brainstorm_sketch.jpg">
+              <img class="img-fluid" src="smart_hub/initial_brainstorm_sketch.jpg" alt="Hardware ecosystem concept sketch">
+            </a>
+            <figcaption>Early hardware ecosystem sketch informing requirements.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/competititve_analysis.png">
+              <img class="img-fluid" src="smart_hub/competititve_analysis.png" alt="Competitive landscape review">
+            </a>
+            <figcaption>Competitive analysis to identify UX opportunities.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/personas.png">
+              <img class="img-fluid" src="smart_hub/personas.png" alt="Target segment personas">
+            </a>
+            <figcaption>Target segments and persona identification.</figcaption>
+          </figure>
+
+          <h5 class="mt-4">Design &amp; Prototype</h5>
+          <p>
+            I evolved device and interface concepts with Industrial Design, then translated portfolio requirements into
+            concrete UX specs—IA, interaction models, and first-run flows for device, app, and web—validating through
+            iterative prototypes.
+          </p>
+
+          <figure>
+            <a href="smart_hub/BRVPlus_device_concept_illustration.pdf">
+              <img class="img-fluid" src="smart_hub/BRVPlus_concept_illustration.png" alt="Device concept illustration and UI controls">
+            </a>
+            <figcaption>Device concept and on-device UI control model (linked PDF).</figcaption>
+          </figure>
+
+          <h5 class="mt-4">Build &amp; Govern</h5>
+          <p>
+            I formalized requirements with the product line manager and engineering—capturing users, use cases, and device/web
+            UX requirements as the single source of truth. This governed scope, prevented regressions, and seeded QA.
+          </p>
+
+          <figure>
+            <a href="smart_hub/Requirements_Users_UseCases.png">
+              <img class="img-fluid" src="smart_hub/Requirements_Users_UseCases.png" alt="Users and use cases requirements frame">
+            </a>
+            <figcaption>Users &amp; use cases framing to support portfolio decisions.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/Requirements_draft.png">
+              <img class="img-fluid" src="smart_hub/Requirements_draft.png" alt="Draft experience requirements">
+            </a>
+            <figcaption>Draft experience requirements formed from portfolio baselines.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/web_controls_ux_reqs.png">
+              <img class="img-fluid" src="smart_hub/web_controls_ux_reqs.png" alt="Web controls UX requirements">
+            </a>
+            <figcaption>Web controls and management UX requirements.</figcaption>
+          </figure>
+
+          <h5 class="mt-4">Test &amp; Iterate</h5>
+          <p>
+            I mapped end-to-end flows and service touchpoints (network, device, app), then iterated the first-run experience.
+            When marketing upgraded the hardware to a high-resolution color display, I redesigned on-device flows and expanded
+            branching paths to leverage the new capability.
+          </p>
+
+          <figure>
+            <a href="smart_hub/experience_flow.png">
+              <img class="img-fluid" src="smart_hub/experience_flow.png" alt="Experience flow and service touchpoints">
+            </a>
+            <figcaption>Experience flows and early service blueprinting (error handling included).</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/App_install_flow.pdf">
+              <img class="img-fluid" src="smart_hub/App_install_flow_s.png" alt="App install flow (low-res device variant)">
+            </a>
+            <figcaption>Initial app install flow for low-res display hardware (linked PDF).</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/App_Setup_flow_Smartcom_v1.0.pdf">
+              <img class="img-fluid" src="smart_hub/App_Setup_flow_v1.0s.png" alt="App setup flow (high-res color display)">
+            </a>
+            <figcaption>Revised setup flow for high-res color display (linked PDF).</figcaption>
+          </figure>
+
+          <figure>
+            <a href="smart_hub/App_firstrun.png">
+              <img class="img-fluid" src="smart_hub/App_firstrun.png" alt="Finalized first-run setup via mobile device">
+            </a>
+            <figcaption>Finalized, user-verified first-run via mobile.</figcaption>
+          </figure>
+          <figure>
+            <a href="smart_hub/Web_firstrun.png">
+              <img class="img-fluid" src="smart_hub/Web_firstrun.png" alt="Finalized first-run setup via web">
+            </a>
+            <figcaption>Finalized, user-verified first-run via web.</figcaption>
+          </figure>
+        </section>
+
+        <!-- Results -->
+        <section id="results" class="cs-section">
+          <h3>Results &amp; Impact</h3>
+          <ul>
+            <li><strong>Commercial launch</strong> after multi-round user testing, QA, and network validation.</li>
+            <li><strong>Recurring revenue</strong> stream in the $100Ms and an expanded device portfolio.</li>
+            <li><strong>Portfolio UX refresh</strong> and <strong>over-the-air management</strong> patterns established.</li>
+          </ul>
+        </section>
+
+        <!-- Deliverables -->
+        <section id="deliverables" class="cs-section">
+          <h3>Deliverables</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h6>Research &amp; Strategy</h6>
+              <ul>
+                <li>Competitive landscape &amp; benchmarking</li>
+                <li>Segments, personas, use-case taxonomy</li>
+                <li>Vision artifacts and UX workstream schedule</li>
+              </ul>
+
+              <h6>Service &amp; Interaction Design</h6>
+              <ul>
+                <li>Service blueprints &amp; experience flows</li>
+                <li>First-run UX (device, app, web) with error handling</li>
+                <li>IA, content model, and notification patterns</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h6>Systems &amp; Enablement</h6>
+              <ul>
+                <li>Portfolio-aligned requirements (F/NFR) as SSoT</li>
+                <li>OTA management patterns &amp; web controls requirements</li>
+                <li>QA scenarios, regression tracking, GTM collateral review</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Evidence / Visuals -->
+        <section id="evidence" class="cs-section">
+          <h3>Commercial Product</h3>
+          <figure>
+            <a href="smart_hub/home_phone_plus.png">
+              <img class="img-fluid" src="smart_hub/home_phone_plus.png" alt="Commercial product photo of Smart Hub">
+            </a>
+            <figcaption>Product commercialized for the consumer market.</figcaption>
+          </figure>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="cs-section">
+          <h3>Let’s Connect</h3>
+          <p>If you’re evolving connected-home or device portfolios and need measurable design outcomes, I’m happy to compare notes.</p>
+          <p>
+            <a href="https://www.linkedin.com/in/john-riggin" target="_blank" rel="noopener">
+              <img class="img-fluid" src="grphx/li-in-bug_sm.png" alt="LinkedIn profile"> LinkedIn
+            </a><br>
+            <a class="lnk_blk" href="mailto:j.riggin@xd-pro.com">j.riggin@xd-pro.com</a><br>
+            <span id="phone-number">+1 978.844.8131</span>
+          </p>
+        </section>
+      </article>
+
+      <!-- Sticky ToC (matches IMX) -->
+      <aside class="col-lg-4 pt-4" aria-label="On-page navigation">
+        <nav id="toc" class="cs-toc">
+          <h6 class="text-muted">On this page</h6>
+          <a href="#summary">Summary</a>
+          <a href="#context">Context &amp; Challenge</a>
+          <a href="#approach">Approach</a>
+          <a href="#results">Results &amp; Impact</a>
+          <a href="#deliverables">Deliverables</a>
+          <a href="#evidence">Commercial Product</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="text-center bg-black" role="contentinfo">
+    <div class="container">
+      <div class="row"><div class="col-12">
+        <p id="ftr"></p>
+        <script>document.getElementById("ftr").innerHTML =
+          "UXPS Associates, LLC. &COPY " + (new Date()).getFullYear() + " All rights reserved.";</script>
+      </div></div>
+    </div>
+  </footer>
+
+  <!-- JS (same include order as IMX) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
